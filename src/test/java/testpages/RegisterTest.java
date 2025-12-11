@@ -15,8 +15,7 @@ public class RegisterTest extends BaseTest {
     public void EnterCustomerDetails () {
     	
     	Login loginPage = new Login(driver);
-    	
-        // Click Register button on Login page, get Register page object
+    	// Click Register button on Login page, get Register page object
     	Register register = loginPage.ClickRegisterbtn();
 		register.enterFirstName( "USER");
 		register.enterLastName("Test");

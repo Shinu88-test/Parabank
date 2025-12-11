@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-11T13:13:17 GST" name="Suite" finished-at="2025-12-11T13:13:38 GST" duration-ms="20500">
+    <groups>
+    </groups>
+    <test started-at="2025-12-11T13:13:17 GST" name="Test" finished-at="2025-12-11T13:13:38 GST" duration-ms="20500">
+      <class name="testpages.RegisterTest">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:testpages.RegisterTest@2b30a42c]" started-at="2025-12-11T13:13:25 GST" name="driverSetup" finished-at="2025-12-11T13:13:28 GST" duration-ms="3461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="EnterCustomerDetails()[pri:1, instance:testpages.RegisterTest@2b30a42c]" started-at="2025-12-11T13:13:28 GST" name="EnterCustomerDetails" finished-at="2025-12-11T13:13:31 GST" duration-ms="2968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterCustomerDetails -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testpages.RegisterTest@2b30a42c]" started-at="2025-12-11T13:13:31 GST" name="teardown" finished-at="2025-12-11T13:13:32 GST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testpages.RegisterTest -->
+      <class name="testpages.LoginTest">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:testpages.LoginTest@2d901eb0]" started-at="2025-12-11T13:13:18 GST" name="driverSetup" finished-at="2025-12-11T13:13:22 GST" duration-ms="4139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="ClickOnRegister()[pri:0, instance:testpages.LoginTest@2d901eb0]" started-at="2025-12-11T13:13:22 GST" name="ClickOnRegister" finished-at="2025-12-11T13:13:23 GST" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnRegister -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testpages.LoginTest@2d901eb0]" started-at="2025-12-11T13:13:25 GST" name="teardown" finished-at="2025-12-11T13:13:25 GST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testpages.LoginTest -->
+      <class name="testpages.OverviewTest">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:testpages.OverviewTest@609e8838]" started-at="2025-12-11T13:13:32 GST" name="driverSetup" finished-at="2025-12-11T13:13:36 GST" duration-ms="3232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="EnterCredentials(java.lang.String,java.lang.String)[pri:0, instance:testpages.OverviewTest@609e8838]" started-at="2025-12-11T13:13:36 GST" name="EnterCredentials" data-provider="loginData" finished-at="2025-12-11T13:13:37 GST" duration-ms="1906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[USER]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ONE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterCredentials -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testpages.OverviewTest@609e8838]" started-at="2025-12-11T13:13:38 GST" name="teardown" finished-at="2025-12-11T13:13:38 GST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testpages.OverviewTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

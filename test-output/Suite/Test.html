@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 09 11:59:31 GST 2025</td>
+<td>Started on:</td><td>Thu Dec 11 13:05:35 GST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28012 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13265 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,28 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testpages.RegisterTest.EnterCustomerDetails()'><b>EnterCustomerDetails</b><br>Test class: testpages.RegisterTest</td>
-<td><div><pre>java.lang.AssertionError: expected [Welcome test] but found [ParaBank | Customer Created]
-	at pages.Register.getpagetitle(Register.java:84)
-	at testpages.RegisterTest.EnterCustomerDetails(RegisterTest.java:28)
+<td title='testpages.OverviewTest.EnterCredentials()'><b>EnterCredentials</b><br>Test class: testpages.OverviewTest</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: &apos;org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream$Builder org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.builder()&apos;
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace986238875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace986238875'><pre>java.lang.AssertionError: expected [Welcome test] but found [ParaBank | Customer Created]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at pages.Register.getpagetitle(Register.java:84)
-	at testpages.RegisterTest.EnterCustomerDetails(RegisterTest.java:28)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+Caused by: java.lang.NoSuchMethodError: &apos;org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream$Builder org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.builder()&apos;
+	at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:144)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.verifyZipHeader(ZipHelper.java:144)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.openZipStream(ZipHelper.java:188)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:156)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:351)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:64)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:313)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:287)
+	at utilities.Excelutils.getExcelData(Excelutils.java:25)
+	at testpages.OverviewTest.getLoginData(OverviewTest.java:16)
+	... 25 more
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1589931229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589931229'><pre>java.lang.RuntimeException: java.lang.NoSuchMethodError: &apos;org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream$Builder org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.builder()&apos;
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -117,9 +120,27 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.NoSuchMethodError: &apos;org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream$Builder org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.builder()&apos;
+	at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:144)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.verifyZipHeader(ZipHelper.java:144)
+	at org.apache.poi.openxml4j.opc.internal.ZipHelper.openZipStream(ZipHelper.java:188)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:156)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:351)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:64)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:313)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:287)
+	at utilities.Excelutils.getExcelData(Excelutils.java:25)
+	at testpages.OverviewTest.getLoginData(OverviewTest.java:16)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
+	... 25 more
 </pre></div></td>
-<td>4</td>
-<td>testpages.RegisterTest@47c81abf</td></tr>
+<td>0</td>
+<td>testpages.OverviewTest@68746f22</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -130,15 +151,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testpages.RegisterTest.EnterCustomerDetails()'><b>EnterCustomerDetails</b><br>Test class: testpages.RegisterTest</td>
+<td></td>
+<td>2</td>
+<td>testpages.RegisterTest@5f9edf14</td></tr>
+<tr>
 <td title='testpages.LoginTest.ClickOnRegister()'><b>ClickOnRegister</b><br>Test class: testpages.LoginTest</td>
 <td></td>
 <td>1</td>
-<td>testpages.LoginTest@4ee203eb</td></tr>
-<tr>
-<td title='testpages.OverviewTest.EnterCredentials()'><b>EnterCredentials</b><br>Test class: testpages.OverviewTest<br>Parameters: USER, ONE</td>
-<td></td>
-<td>2</td>
-<td>testpages.OverviewTest@776a6d9b</td></tr>
+<td>testpages.LoginTest@1224144a</td></tr>
 </table><p>
 </body>
 </html>

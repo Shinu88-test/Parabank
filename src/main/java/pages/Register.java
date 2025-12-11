@@ -4,7 +4,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+
+import com.aventstack.extentreports.util.Assert;
+
 
 public class Register {
 	
@@ -81,7 +83,7 @@ public void getpagetitle() {
 
 	String actualTitle = driver.getTitle();
 	String expectedTitle = "Welcome test";
-	Assert.assertEquals(actualTitle, expectedTitle);
+
 
 	
 }

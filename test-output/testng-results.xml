@@ -1,88 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-09T11:59:31 GST" name="Suite" finished-at="2025-12-09T11:59:59 GST" duration-ms="28012">
+  <suite started-at="2025-12-11T13:12:52 GST" name="Default suite" finished-at="2025-12-11T13:12:58 GST" duration-ms="5752">
     <groups>
     </groups>
-    <test started-at="2025-12-09T11:59:31 GST" name="Test" finished-at="2025-12-09T11:59:59 GST" duration-ms="28012">
-      <class name="testpages.RegisterTest">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:testpages.RegisterTest@47c81abf]" started-at="2025-12-09T11:59:41 GST" name="driverSetup" finished-at="2025-12-09T11:59:45 GST" duration-ms="4397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverSetup -->
-        <test-method signature="EnterCustomerDetails()[pri:1, instance:testpages.RegisterTest@47c81abf]" started-at="2025-12-09T11:59:45 GST" name="EnterCustomerDetails" finished-at="2025-12-09T11:59:50 GST" duration-ms="4459" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Welcome test] but found [ParaBank | Customer Created]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Welcome test] but found [ParaBank | Customer Created]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at pages.Register.getpagetitle(Register.java:84)
-at testpages.RegisterTest.EnterCustomerDetails(RegisterTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterCustomerDetails -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testpages.RegisterTest@47c81abf]" started-at="2025-12-09T11:59:50 GST" name="teardown" finished-at="2025-12-09T11:59:50 GST" duration-ms="375" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testpages.RegisterTest -->
-      <class name="testpages.LoginTest">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:testpages.LoginTest@4ee203eb]" started-at="2025-12-09T11:59:31 GST" name="driverSetup" finished-at="2025-12-09T11:59:38 GST" duration-ms="7684" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverSetup -->
-        <test-method signature="ClickOnRegister()[pri:0, instance:testpages.LoginTest@4ee203eb]" started-at="2025-12-09T11:59:39 GST" name="ClickOnRegister" finished-at="2025-12-09T11:59:40 GST" duration-ms="1563" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickOnRegister -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testpages.LoginTest@4ee203eb]" started-at="2025-12-09T11:59:41 GST" name="teardown" finished-at="2025-12-09T11:59:41 GST" duration-ms="393" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testpages.LoginTest -->
+    <test started-at="2025-12-11T13:12:52 GST" name="Default test" finished-at="2025-12-11T13:12:58 GST" duration-ms="5752">
       <class name="testpages.OverviewTest">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:testpages.OverviewTest@776a6d9b]" started-at="2025-12-09T11:59:51 GST" name="driverSetup" finished-at="2025-12-09T11:59:55 GST" duration-ms="4003" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:testpages.OverviewTest@2d29b4ee]" started-at="2025-12-11T13:12:53 GST" name="driverSetup" finished-at="2025-12-11T13:12:57 GST" duration-ms="3803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="EnterCredentials(java.lang.String,java.lang.String)[pri:0, instance:testpages.OverviewTest@776a6d9b]" started-at="2025-12-09T11:59:55 GST" name="EnterCredentials" data-provider="loginData" finished-at="2025-12-09T11:59:58 GST" duration-ms="2589" status="PASS">
+        <test-method signature="EnterCredentials(java.lang.String,java.lang.String)[pri:0, instance:testpages.OverviewTest@2d29b4ee]" started-at="2025-12-11T13:12:57 GST" name="EnterCredentials" data-provider="loginData" finished-at="2025-12-11T13:12:58 GST" duration-ms="687" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,11 +27,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterCredentials -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testpages.OverviewTest@776a6d9b]" started-at="2025-12-09T11:59:58 GST" name="teardown" finished-at="2025-12-09T11:59:59 GST" duration-ms="358" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testpages.OverviewTest@2d29b4ee]" started-at="2025-12-11T13:12:58 GST" name="teardown" finished-at="2025-12-11T13:12:58 GST" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testpages.OverviewTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
